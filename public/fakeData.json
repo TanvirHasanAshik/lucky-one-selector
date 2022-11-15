@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Winter jacket",
+        "img": "../images/img-1.jpg",
+        "price": 400
+    },
+    {
+        "id": "2",
+        "name": "Winter hudi black",
+        "img": "../images/img-2.jpg",
+        "price": 600
+    },
+    {
+        "id": "3",
+        "name": "T shirt",
+        "img": "../images/img-3.jpg",
+        "price": 500
+    },
+    {
+        "id": "4",
+        "name": "Full Shirt",
+        "img": "../images/img-4.jpg",
+        "price": 400
+    },
+    {
+        "id": "5",
+        "name": "Danger T Shirt",
+        "img": "../images/img-5.jpg",
+        "price": 550
+    },
+    {
+        "id": "6",
+        "name": "winter hudi ash",
+        "img": "../images/img-6.jpg",
+        "price": 700
+    },
+    {
+        "id": "7",
+        "name": "Black T shirt",
+        "img": "../images/img-7.jpg",
+        "price": 250
+    },
+    {
+        "id": "8",
+        "name": "Meroon T shirt",
+        "img": "../images/img-8.jpg",
+        "price": 350
+    },
+    {
+        "id": "9",
+        "name": "white T shirt",
+        "img": "../images/img-9.jpg",
+        "price": 750
+    }
+]
