@@ -15,7 +15,7 @@ const SingleProduct = (props) => {
                     <div className="col-md-8">
                         <div className="card-body m-2 d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 className="card-title">{name} {id}</h4>
+                                <h4 className="card-title">{name}</h4>
                                 <h5>Price: {price}</h5>
                             </div>
                             <div>
@@ -27,6 +27,7 @@ const SingleProduct = (props) => {
                     </div>
                 </div>
             </div>
+
         </div >
     );
 };
