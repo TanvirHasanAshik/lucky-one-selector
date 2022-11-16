@@ -31,6 +31,7 @@ const Shop = () => {
         deleteSingleProduct(product);
         const getData = getLocalStorage();
         setSelectItem(getData);
+        setCount(getData.length);
     }
     /* ---------------------------------------------- */
 
@@ -51,12 +52,12 @@ const Shop = () => {
             randomSelect();
         }
     }
-    console.log(randomChose)
     /* ------------------------- */
     useEffect(() => {
         const getData = getLocalStorage();
         setSelectItem(getData);
-    }, [])
+    }, []);
+    console.log(count);
     return (
         <div className="row d-flex justify-content-center">
             {
