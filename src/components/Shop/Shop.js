@@ -7,6 +7,7 @@ const Shop = () => {
     const [products, setProduct] = useState([]);
     const [selectItem, setSelectItem] = useState([]);
     const [randomChose, setRandomChose] = useState(null);
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
         fetch('fakeData.json')
@@ -16,6 +17,10 @@ const Shop = () => {
 
     /* product add in local storage and show UI */
     const handleProduct = (product) => {
+
+        if (parseInt(product.id) !== count) {
+            setCount(count + 1);
+        }
         addLocalStorage(product);
         const getData = getLocalStorage();
         setSelectItem(getData);
@@ -54,6 +59,21 @@ const Shop = () => {
     }, [])
     return (
         <div className="row d-flex justify-content-center">
+            {
+                count >= 4 ? <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body p-5">
+                                <h4>You cannot add more than four products.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    : <p></p>
+            }
             {
                 <div className="col-md-8 col-12 p-5">
                     {
