@@ -60,7 +60,8 @@ const Shop = () => {
     return (
         <div className="row d-flex justify-content-center">
             {
-                count >= 4 ? <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                count >= 4 ? <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
